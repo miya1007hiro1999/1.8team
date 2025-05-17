@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>ProNaviオフ会参加申し込みフォーム</title>
+  <meta name="description" content="ProNavi主催のオフ会への参加申し込みフォームです。">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" title="メインページへ戻る">
+      <img src="img/logo.png" alt="メインページへ戻る">
+    </a>
+
+  </header>
+  <main>
+    <h1 class="form-title">オフ会参加申し込みフォーム</h1>
+    <form action="#" method="POST">
+
+        <div class="form-group">
+          <label for="name1">お名前<span>*必須</span></label>
+          <input type="text" id="name1" name="name1" required>
+        </div>
+
+        <div class="form-group">
+          <label for="name2">LINE名<span>*必須</span></label>
+          <input type="text" id="name2" name="name2" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">メールアドレス<span>*必須</span></label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tel">電話番号</label>
+          <input type="tel" id="tel" name="tel" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">ご質問・メッセージ（任意）</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <label class="check-btn">
+          <input type="checkbox" name="agree" required>
+          <span><a href="#">利用規約</a></span>に同意します
+        </label>
+
+        <div class="btn-group">
+          <input type="submit" value="送信する" class="submit-btn">
+
+          <a href="index.html" class="back-btn" title="メインページに戻る">
+            <img src="img/back.png" alt="メインページに戻る">
+          </a>
+        </div>
+        
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 1.8期生</p>
+  </footer>
+</body>
+
+</html>
